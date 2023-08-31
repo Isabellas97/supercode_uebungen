@@ -148,8 +148,6 @@ h2 {
 }
 
 /* - Werbung-Bereich = 1. Grid hat 1 Col (betseht aus 1 H4 und 3 boxen untereinander) */
-.Werbung {
-}
 
 .WerbungGrid {
   display: grid;
@@ -171,4 +169,49 @@ h4 {
   text-align: center;
   padding: 3.5vh 2vw;
   align-self: self-end;
+}
+
+@media only screen and (max-width: 992px) {
+  .newspaper {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .content {
+    grid-column: 1 / 2;
+  }
+
+  .Werbung {
+    grid-column: 1 / 2;
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3vh 4vw;
+    margin-bottom: 7vh;
+  }
+
+  h2 {
+    padding: 0 10vw;
+  }
+
+  .Küchenbild {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    padding: 0 15vw;
+  }
+
+  .WerbungGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4vw;
+  }
+
+  .border {
+    height: 30vh;
+    padding: 2.5vh 2vw;
+  }
+  .border2 p {
+    font-size: 0.8rem;
+  }
 }
