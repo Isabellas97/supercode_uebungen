@@ -5,25 +5,16 @@
 // id aus dem HTML: info
 const info = document.getElementById("info");
 
-document.getElementById("info").innerHTML = "<h1>Hello World</h1>";
-// oder: (kurz)
-// info.innerHTML = "<h1>Hello World</h1>";
+info.innerHTML = "<h1>Hello World</h1>";
 
-//
 // Anzeige in der Console mit diesem Befehl
-
-console.log(document.getElementById("info").innerHTML);
-// oder:
 console.log(info.innerHTML);
 
 // --------------------
 
 //! Füge noch eine h2 hinzu mit dem Text “How are you?”.
-document.getElementById("info").innerHTML += "<h2>How are you?</h2>";
-// oder (kurz)
-// info.innerHTML += "<h2>How are you?</h2>"; //weil wie eine Variable vergeben haben
+info.innerHTML += "<h2>How are you?</h2>";
 
-//
 // Sieh’ dir das Ergebnis über den Live Server an.
 console.log(info.innerHTML);
 
@@ -31,11 +22,9 @@ console.log(info.innerHTML);
 
 const container = document.getElementById("container");
 
-// document.getElementById("container").innerHTML = "<p>start of the element";
-// oder kurz:
-container.innerHTML = "<p>start of the element"; //weil wie eine Variable vergeben haben
+container.innerHTML = "start of the element";
 
 //! Schreibe nun document.write("end of the element")
 
 document.write("end of the element");
-// mit end of the elemet wird es automatisch nach ganz unten ans ende gesetzt, egal wie viele elemente noch hinzufügt
+// document.write wird automatisch immer ganz unten ans ende gesetzt
